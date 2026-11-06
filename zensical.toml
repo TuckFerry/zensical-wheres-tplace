@@ -1,91 +1,114 @@
 [project]
 site_name = "这是哪里"
-# site_description = "Your project description"
-# site_author = "Your name"
+site_url = "https://blog.tuckferry.cn"
+# site_description = "记录个人生活与学习历程，既包括已掌握和即将探索的知识，也包含日常生活中的点滴。"
+site_author = "冷澀"
 
-# copyright = "Copyright &copy; 2026 Your name"
+copyright = "充满回忆 | QQ <2494039263>"
 
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
+repo_url = "https://github.com/TuckFerry"
+repo_name = "TuckFerry - repo"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  { "首页" = "index.md" },
+  { "音游" = [
+    "rhythmgame/index.md",
+  ]},
+  { "关于" = [
+    "about/updatelog.md",
+  ]},
 ]
 
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
-# variant = "classic"
+variant = "classic"  #界面主题
 # custom_dir = "overrides"
-# favicon = "images/favicon.png"
-language = "en"
+favicon = "img/favicon.ico"
+language = "zh"
 features = [
   "announce.dismiss",
-  # "content.action.edit",
-  # "content.action.view",
+  # "content.action.edit",  #编辑源码
+  # "content.action.view",  #查看源码
   "content.code.annotate",
   "content.code.copy",
   "content.code.select",
   "content.footnote.tooltips",
   "content.tabs.link",
   "content.tooltips",
-  # "header.autohide",
-  # "navigation.expand",
-  "navigation.footer",
-  "navigation.indexes",
-  "navigation.instant",
-  "navigation.instant.prefetch",
-  # "navigation.instant.progress",
-  "navigation.path",
-  # "navigation.prune",
-  "navigation.sections",
-  # "navigation.tabs",
-  # "navigation.tabs.sticky",
-  "navigation.top",
-  "navigation.tracking",
-  "search.highlight",
-  # "toc.follow",
-  # "toc.integrate",
+  "header.autohide",  #头部自动隐藏
+  "navigation.expand",  #自动展开
+  # "navigation.footer",  #底部导航
+  "navigation.indexes",  #目录索引页（大标题可点击）
+  "navigation.instant",  #即时加载
+  "navigation.instant.prefetch",  #悬停预加载
+  "navigation.instant.progress",  #加载进度条
+  # "navigation.path",  #面包屑导航
+  # "navigation.prune",  #性能优化
+  "navigation.sections",  #展开第一层级
+  "navigation.tabs",  #顶部导航标签页
+  "navigation.tabs.sticky",  #固定顶部导航标签页
+  "navigation.top",  #回到顶部按钮
+  # "navigation.tracking",  #url跟踪
+  "search.highlight",  #搜索高亮
+  "toc.follow",  #右侧边栏自动滚动
+  # "toc.integrate",  #右侧边栏渲染至左侧
 ]
 
-# logo = "assets/logo.png"
+logo = "img/sherii.webp"
 
-# [project.theme.icon]
+[project.plugins.blog]
+blog_dir = "rhythmgame"
+blog_toc = true
+post_date_format = "medium"
+post_url_date_format = "yyyy/MM"
+post_excerpt_max_authors = 0
+post_excerpt_max_categories = 7
+post_readtime = false
+archive_name = "档案"
+categories_name = "分类"
+categories_allowed = ["Phigros", "Arcaea", "Rotaeno", "Maimai", "Chunithm", "In Falsus", "Others"]
+authors = false
+
+# [project.theme.icon]  #使用自带图标作为logo
 # logo = "lucide/smile"
 
-# [project.theme.font]
+# [project.theme.font]  #字体
 # text = "Inter"
 # code = "Jetbrains Mono"
 
-[[project.theme.palette]]
+[[project.theme.palette]]  #系统偏好
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
-toggle.name = "Switch to light mode"
+toggle.name = "切换至浅色"
 
-[[project.theme.palette]]
+[[project.theme.palette]]  #浅色
 media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
+toggle.name = "切换至深色"
+primary = "light blue"
+accent = "indigo"
 
-[[project.theme.palette]]
+[[project.theme.palette]]  #深色
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
-toggle.name = "Switch to system preference"
+toggle.name = "切换至系统偏好"
+primary = "blue grey"
+accent = "indigo"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/github"
-# link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "simple/github"
+link = "https://github.com/TuckFerry"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/mastodon"
-# link = "https://fosstodon.org/@user"
+[[project.extra.social]]
+icon = "simple/Bilibili"
+link = "https://space.bilibili.com/513018531"
 
-[project.markdown_extensions]
+[project.markdown_extensions]  #markdown配置
 abbr = {}
 admonition = {}
 attr_list = {}
