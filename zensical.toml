@@ -101,11 +101,11 @@ primary = "blue grey"
 accent = "indigo"
 
 [[project.extra.social]]
-icon = "simple/github"
+icon = "fontawesome/brands/github"
 link = "https://github.com/TuckFerry"
 
 [[project.extra.social]]
-icon = "simple/Bilibili"
+icon = "fontawesome/brands/bilibili"
 link = "https://space.bilibili.com/513018531"
 
 [project.markdown_extensions]  #markdown配置
