@@ -3,7 +3,7 @@ date:
   created: 2026-09-23
 title: 建站时我的水平
 categories:
-  - Others
+  - 音游
 ---
 
 ## Phigros : rks16.34

@@ -12,8 +12,13 @@ repo_name = "TuckFerry - repo"
 
 nav = [
   { "首页" = "index.md" },
-  { "音游" = [
-    "rhythmgame/index.md",
+  { "编程" = [ "coding/index.md",
+    { "C/C++" = [
+      "coding/c_c++/stl.md",
+    ]},
+  ]},
+  { "博客" = [
+    "blog/index.md",
   ]},
   { "关于" = [
     "about/updatelog.md",
@@ -60,16 +65,16 @@ features = [
 logo = "img/sherii.webp"
 
 [project.plugins.blog]
-blog_dir = "rhythmgame"
+blog_dir = "blog"
 blog_toc = true
 post_date_format = "medium"
 post_url_date_format = "yyyy/MM"
 post_excerpt_max_authors = 0
-post_excerpt_max_categories = 7
+post_excerpt_max_categories = 2
 post_readtime = false
 archive_name = "档案"
 categories_name = "分类"
-categories_allowed = ["Phigros", "Arcaea", "Rotaeno", "Maimai", "Chunithm", "In Falsus", "Others"]
+categories_allowed = ["校园", "音游"]
 authors = false
 
 # [project.theme.icon]  #使用自带图标作为logo
